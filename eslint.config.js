@@ -6,6 +6,7 @@ export default ts.config(
   { ignores: [".svelte-kit", "eslint.config.js", "svelte.config.js"] },
   ...ts.configs.recommendedTypeChecked,
   {
+    files: ["**/*.ts", "**.*.js"],
     languageOptions: {
       parserOptions: {
         projectService: true
@@ -18,7 +19,8 @@ export default ts.config(
     languageOptions: {
       parserOptions: {
         extraFileExtensions: ['.svelte'],
-        parser: ts.parser,
+        parser: "typescript-eslint-parser-for-extra-files",
+        project: "./tsconfig.json",
         svelteConfig
       }
     }

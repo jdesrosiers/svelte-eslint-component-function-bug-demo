@@ -1,0 +1,886 @@
+
+> svelte-eslint-component-function-bug-demo@0.0.1 lint
+> eslint .
+
+2025-03-26T18:37:24.898Z typescript-eslint:typescript-estree:create-program:createProjectService Creating project service with: { defaultProject: 'tsconfig.json' }
+2025-03-26T18:37:24.901Z typescript-eslint:typescript-estree:tsserver:info currentDirectory:: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo useCaseSensitiveFileNames:: true
+2025-03-26T18:37:24.901Z typescript-eslint:typescript-estree:tsserver:info libs Location:: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib
+2025-03-26T18:37:24.901Z typescript-eslint:typescript-estree:tsserver:info globalTypingsCacheLocation:: undefined
+2025-03-26T18:37:24.903Z typescript-eslint:typescript-estree:create-program:createProjectService Enabling default project: tsconfig.json
+2025-03-26T18:37:24.932Z typescript-eslint:typescript-estree:useProgramFromProjectService Opening project service file for: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts at absolute path /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts
+2025-03-26T18:37:24.933Z typescript-eslint:typescript-estree:useProgramFromProjectService Opening project service client file at path: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts
+2025-03-26T18:37:24.934Z typescript-eslint:typescript-estree:tsserver:info getConfigFileNameForFile:: File: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts ProjectRootPath: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo:: Result: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json
+2025-03-26T18:37:24.936Z typescript-eslint:typescript-estree:tsserver:info Creating ConfiguredProject: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json, currentDirectory: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo
+2025-03-26T18:37:24.939Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Config file
+2025-03-26T18:37:24.949Z typescript-eslint:typescript-estree:tsserver:info Config: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json : {
+ "rootNames": [
+  "/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit/ambient.d.ts",
+  "/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit/non-ambient.d.ts",
+  "/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit/types/src/routes/$types.d.ts",
+  "/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/vite.config.ts",
+  "/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts",
+  "/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/lib/index.ts"
+ ],
+ "options": {
+  "paths": {
+   "$lib": [
+    "../src/lib"
+   ],
+   "$lib/*": [
+    "../src/lib/*"
+   ]
+  },
+  "rootDirs": [
+   "/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo",
+   "/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit/types"
+  ],
+  "verbatimModuleSyntax": true,
+  "isolatedModules": true,
+  "lib": [
+   "lib.esnext.d.ts",
+   "lib.dom.d.ts",
+   "lib.dom.iterable.d.ts"
+  ],
+  "moduleResolution": 100,
+  "module": 99,
+  "noEmit": true,
+  "target": 99,
+  "pathsBasePath": "/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit",
+  "allowJs": true,
+  "checkJs": true,
+  "esModuleInterop": true,
+  "forceConsistentCasingInFileNames": true,
+  "resolveJsonModule": true,
+  "skipLibCheck": true,
+  "sourceMap": true,
+  "strict": true,
+  "configFilePath": "/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json"
+ }
+}
+2025-03-26T18:37:24.950Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit/tsconfig.json 2000 undefined Config: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Extended config file
+2025-03-26T18:37:24.952Z typescript-eslint:typescript-estree:tsserver:event {
+  eventName: 'projectLoadingStart',
+  data: {
+    project: ConfiguredProject2 {
+      projectKind: 1,
+      projectService: [_ProjectService],
+      compilerOptions: {},
+      compileOnSaveEnabled: false,
+      watchOptions: undefined,
+      rootFilesMap: Map(0) {},
+      plugins: [],
+      cachedUnresolvedImportsPerFile: Map(0) {},
+      hasAddedorRemovedFiles: false,
+      hasAddedOrRemovedSymlinks: false,
+      lastReportedVersion: 0,
+      projectProgramVersion: 0,
+      projectStateVersion: 1,
+      initialLoadPending: false,
+      dirty: true,
+      typingFiles: [],
+      moduleSpecifierCache: [Object],
+      createHash: [Function: bound createSHA256Hash],
+      globalCacheResolutionModuleName: [Function: nonRelativeModuleNameForTypingCache],
+      updateFromProjectInProgress: false,
+      projectName: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json',
+      directoryStructureHost: [Object],
+      currentDirectory: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo',
+      getCanonicalFileName: [Function: identity],
+      jsDocParsingMode: 0,
+      cancellationToken: [ThrottledCancellationToken],
+      languageServiceEnabled: true,
+      trace: [Function (anonymous)],
+      realpath: [Function: bound realpath],
+      preferNonRecursiveWatch: true,
+      resolutionCache: [Object],
+      languageService: [Object],
+      canonicalConfigFilePath: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json',
+      openFileWatchTriggered: Map(0) {},
+      sendLoadingProjectFinish: true,
+      pendingUpdateLevel: 0,
+      pendingUpdateReason: undefined,
+      parsedCommandLine: [Object],
+      resolvedChildConfigs: undefined,
+      projectReferences: undefined,
+      potentialProjectReferences: undefined,
+      triggerFileForConfigFileDiag: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts'
+    },
+    reason: 'Creating possible configured project for /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts to open'
+  }
+}
+2025-03-26T18:37:24.953Z typescript-eslint:typescript-estree:tsserver:info DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit/types 1 undefined Config: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Wild card directory
+2025-03-26T18:37:24.953Z typescript-eslint:typescript-estree:tsserver:info Elapsed:: 0.0300400000000991ms DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit/types 1 undefined Config: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Wild card directory
+2025-03-26T18:37:24.953Z typescript-eslint:typescript-estree:tsserver:info DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src 1 undefined Config: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Wild card directory
+2025-03-26T18:37:24.953Z typescript-eslint:typescript-estree:tsserver:info Elapsed:: 0.003412000000025728ms DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src 1 undefined Config: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Wild card directory
+2025-03-26T18:37:24.953Z typescript-eslint:typescript-estree:tsserver:info DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tests 1 undefined Config: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Wild card directory
+2025-03-26T18:37:24.953Z typescript-eslint:typescript-estree:tsserver:info Elapsed:: 0.003012000000126136ms DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tests 1 undefined Config: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Wild card directory
+2025-03-26T18:37:24.954Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit/ambient.d.ts 500 undefined WatchType: Closed Script info
+2025-03-26T18:37:24.955Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit/non-ambient.d.ts 500 undefined WatchType: Closed Script info
+2025-03-26T18:37:24.955Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit/types/src/routes/$types.d.ts 500 undefined WatchType: Closed Script info
+2025-03-26T18:37:24.955Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/vite.config.ts 500 undefined WatchType: Closed Script info
+2025-03-26T18:37:24.955Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/lib/index.ts 500 undefined WatchType: Closed Script info
+2025-03-26T18:37:24.956Z typescript-eslint:typescript-estree:tsserver:info Starting updateGraphWorker: Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json
+2025-03-26T18:37:24.994Z typescript-eslint:typescript-estree:tsserver:info DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules 1 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Failed Lookup Locations
+2025-03-26T18:37:24.994Z typescript-eslint:typescript-estree:tsserver:info Elapsed:: 0.030162000000018452ms DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules 1 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Failed Lookup Locations
+2025-03-26T18:37:24.994Z typescript-eslint:typescript-estree:tsserver:info DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/node_modules 1 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Failed Lookup Locations
+2025-03-26T18:37:24.994Z typescript-eslint:typescript-estree:tsserver:info Elapsed:: 0.0025869999999486026ms DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/node_modules 1 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Failed Lookup Locations
+2025-03-26T18:37:24.994Z typescript-eslint:typescript-estree:tsserver:info DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/node_modules 1 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Failed Lookup Locations
+2025-03-26T18:37:24.994Z typescript-eslint:typescript-estree:tsserver:info Elapsed:: 0.0013820000001487642ms DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/node_modules 1 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Failed Lookup Locations
+2025-03-26T18:37:24.995Z typescript-eslint:typescript-estree:tsserver:info DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit 1 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Failed Lookup Locations
+2025-03-26T18:37:24.995Z typescript-eslint:typescript-estree:tsserver:info Elapsed:: 0.0033180000000356813ms DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit 1 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Failed Lookup Locations
+2025-03-26T18:37:24.996Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@sveltejs/kit/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:24.996Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@sveltejs/vite-plugin-svelte/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:24.996Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/svelte/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:24.996Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:24.997Z typescript-eslint:typescript-estree:tsserver:info DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules 1 undefined WatchType: node_modules for closed script infos and package.jsons affecting module specifier cache
+2025-03-26T18:37:24.997Z typescript-eslint:typescript-estree:tsserver:info Elapsed:: 0.003309000000172091ms DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules 1 undefined WatchType: node_modules for closed script infos and package.jsons affecting module specifier cache
+2025-03-26T18:37:25.045Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/yaml/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.168Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/rollup/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.190Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.242Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@types/cookie/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.242Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@types/estree/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.243Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@types/json-schema/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.784Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/magic-string/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.785Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/locate-character/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.786Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/svelte/compiler/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.787Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/cookie/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.788Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@sveltejs/vite-plugin-svelte-inspector/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.789Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/types/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.790Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/esbuild/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.798Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/source-map-js/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.802Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.806Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.806Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.807Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/locate-character/types/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.807Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/svelte/types/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.807Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/rollup/dist/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.807Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/dist/node/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.808Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/dist/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.808Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/esbuild/lib/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.808Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.808Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/types/internal/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.808Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@sveltejs/vite-plugin-svelte-inspector/types/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.808Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@sveltejs/vite-plugin-svelte/types/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.809Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@sveltejs/kit/types/package.json 2000 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: File location affecting resolution
+2025-03-26T18:37:25.811Z typescript-eslint:typescript-estree:tsserver:info DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@types 1 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Type roots
+2025-03-26T18:37:25.811Z typescript-eslint:typescript-estree:tsserver:info Elapsed:: 0.014778000000205793ms DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@types 1 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Type roots
+2025-03-26T18:37:25.811Z typescript-eslint:typescript-estree:tsserver:info DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/node_modules/@types 1 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Type roots
+2025-03-26T18:37:25.811Z typescript-eslint:typescript-estree:tsserver:info Elapsed:: 0.014833000000180618ms DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/node_modules/@types 1 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Type roots
+2025-03-26T18:37:25.811Z typescript-eslint:typescript-estree:tsserver:info DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/node_modules/@types 1 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Type roots
+2025-03-26T18:37:25.811Z typescript-eslint:typescript-estree:tsserver:info Elapsed:: 0.0038260000001173466ms DirectoryWatcher:: Added:: WatchInfo: /home/jdesrosiers/Projects/node_modules/@types 1 undefined Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json WatchType: Type roots
+2025-03-26T18:37:25.812Z typescript-eslint:typescript-estree:tsserver:info Finishing updateGraphWorker: Project: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json projectStateVersion: 1 projectProgramVersion: 0 structureChanged: true structureIsReused:: Not Elapsed: 855.7946889999998ms
+2025-03-26T18:37:25.812Z typescript-eslint:typescript-estree:tsserver:info Project '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json' (Configured)
+2025-03-26T18:37:25.825Z typescript-eslint:typescript-estree:tsserver:info 	Files (130)
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es5.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2015.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2016.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2017.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2018.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2019.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2020.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2021.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2022.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2023.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2024.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.esnext.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.dom.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.dom.iterable.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2015.core.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2015.collection.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2015.generator.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2015.iterable.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2015.promise.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2015.proxy.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2015.reflect.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2015.symbol.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2016.array.include.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2016.intl.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2017.arraybuffer.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2017.date.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2017.object.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2017.string.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2017.intl.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2018.intl.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2018.promise.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2018.regexp.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2019.array.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2019.object.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2019.string.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2019.symbol.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2019.intl.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2020.bigint.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2020.date.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2020.promise.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2020.string.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2020.intl.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2020.number.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2021.promise.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2021.string.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2021.weakref.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2021.intl.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2022.array.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2022.error.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2022.intl.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2022.object.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2022.string.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2022.regexp.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2023.array.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2023.collection.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2023.intl.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2024.arraybuffer.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2024.collection.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2024.object.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2024.promise.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2024.regexp.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2024.sharedmemory.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.es2024.string.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.esnext.array.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.esnext.collection.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.esnext.intl.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.esnext.disposable.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.esnext.promise.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.esnext.decorators.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.esnext.iterator.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.esnext.float16.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.decorators.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/typescript/lib/lib.decorators.legacy.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/magic-string/dist/magic-string.es.d.mts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@types/estree/index.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/locate-character/types/index.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/svelte/types/index.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/types/hmrPayload.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/types/customEvent.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/types/hot.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/types/importGlob.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/types/importMeta.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/client.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/rollup/dist/rollup.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/rollup/dist/parseAst.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/dist/node/moduleRunnerTransport.d-CXw_Ws6P.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/dist/node/module-runner.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/esbuild/lib/main.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/source-map-js/source-map.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/previous-map.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/input.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/css-syntax-error.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/declaration.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/root.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/warning.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/lazy-result.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/no-work-result.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/processor.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/result.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/document.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/rule.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/node.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/comment.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/container.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/at-rule.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/list.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/postcss.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/postcss/lib/postcss.d.mts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/types/internal/lightningcssOptions.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/types/internal/cssPreprocessorOptions.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/types/metadata.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/vite/dist/node/index.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@sveltejs/vite-plugin-svelte-inspector/types/index.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@sveltejs/vite-plugin-svelte/types/index.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@types/cookie/index.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@sveltejs/kit/types/index.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit/ambient.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit/non-ambient.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/.svelte-kit/types/src/routes/$types.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/vite.config.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/lib/index.ts
+	/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/node_modules/@types/json-schema/index.d.ts
+
+
+	node_modules/typescript/lib/lib.es5.d.ts
+	  Library referenced via 'es5' from file 'node_modules/typescript/lib/lib.es2015.d.ts'
+	node_modules/typescript/lib/lib.es2015.d.ts
+	  Library referenced via 'es2015' from file 'node_modules/typescript/lib/lib.es2016.d.ts'
+	node_modules/typescript/lib/lib.es2016.d.ts
+	  Library referenced via 'es2016' from file 'node_modules/typescript/lib/lib.es2017.d.ts'
+	node_modules/typescript/lib/lib.es2017.d.ts
+	  Library referenced via 'es2017' from file 'node_modules/typescript/lib/lib.es2018.d.ts'
+	node_modules/typescript/lib/lib.es2018.d.ts
+	  Library referenced via 'es2018' from file 'node_modules/typescript/lib/lib.es2019.d.ts'
+	node_modules/typescript/lib/lib.es2019.d.ts
+	  Library referenced via 'es2019' from file 'node_modules/typescript/lib/lib.es2020.d.ts'
+	node_modules/typescript/lib/lib.es2020.d.ts
+	  Library referenced via 'es2020' from file 'node_modules/typescript/lib/lib.es2021.d.ts'
+	node_modules/typescript/lib/lib.es2021.d.ts
+	  Library referenced via 'es2021' from file 'node_modules/typescript/lib/lib.es2022.d.ts'
+	node_modules/typescript/lib/lib.es2022.d.ts
+	  Library referenced via 'es2022' from file 'node_modules/typescript/lib/lib.es2023.d.ts'
+	node_modules/typescript/lib/lib.es2023.d.ts
+	  Library referenced via 'es2023' from file 'node_modules/typescript/lib/lib.es2024.d.ts'
+	node_modules/typescript/lib/lib.es2024.d.ts
+	  Library referenced via 'es2024' from file 'node_modules/typescript/lib/lib.esnext.d.ts'
+	node_modules/typescript/lib/lib.esnext.d.ts
+	  Library 'lib.esnext.d.ts' specified in compilerOptions
+	node_modules/typescript/lib/lib.dom.d.ts
+	  Library 'lib.dom.d.ts' specified in compilerOptions
+	node_modules/typescript/lib/lib.dom.iterable.d.ts
+	  Library 'lib.dom.iterable.d.ts' specified in compilerOptions
+	node_modules/typescript/lib/lib.es2015.core.d.ts
+	  Library referenced via 'es2015.core' from file 'node_modules/typescript/lib/lib.es2015.d.ts'
+	node_modules/typescript/lib/lib.es2015.collection.d.ts
+	  Library referenced via 'es2015.collection' from file 'node_modules/typescript/lib/lib.es2015.d.ts'
+	node_modules/typescript/lib/lib.es2015.generator.d.ts
+	  Library referenced via 'es2015.generator' from file 'node_modules/typescript/lib/lib.es2015.d.ts'
+	node_modules/typescript/lib/lib.es2015.iterable.d.ts
+	  Library referenced via 'es2015.iterable' from file 'node_modules/typescript/lib/lib.es2015.d.ts'
+	  Library referenced via 'es2015.iterable' from file 'node_modules/typescript/lib/lib.es2015.generator.d.ts'
+	  Library referenced via 'es2015.iterable' from file 'node_modules/typescript/lib/lib.es2018.asynciterable.d.ts'
+	  Library referenced via 'es2015.iterable' from file 'node_modules/typescript/lib/lib.es2019.object.d.ts'
+	  Library referenced via 'es2015.iterable' from file 'node_modules/typescript/lib/lib.es2020.string.d.ts'
+	  Library referenced via 'es2015.iterable' from file 'node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts'
+	  Library referenced via 'es2015.iterable' from file 'node_modules/typescript/lib/lib.esnext.disposable.d.ts'
+	  Library referenced via 'es2015.iterable' from file 'node_modules/typescript/lib/lib.esnext.iterator.d.ts'
+	  Library referenced via 'es2015.iterable' from file 'node_modules/typescript/lib/lib.esnext.float16.d.ts'
+	node_modules/typescript/lib/lib.es2015.promise.d.ts
+	  Library referenced via 'es2015.promise' from file 'node_modules/typescript/lib/lib.es2015.d.ts'
+	node_modules/typescript/lib/lib.es2015.proxy.d.ts
+	  Library referenced via 'es2015.proxy' from file 'node_modules/typescript/lib/lib.es2015.d.ts'
+	node_modules/typescript/lib/lib.es2015.reflect.d.ts
+	  Library referenced via 'es2015.reflect' from file 'node_modules/typescript/lib/lib.es2015.d.ts'
+	node_modules/typescript/lib/lib.es2015.symbol.d.ts
+	  Library referenced via 'es2015.symbol' from file 'node_modules/typescript/lib/lib.es2015.iterable.d.ts'
+	  Library referenced via 'es2015.symbol' from file 'node_modules/typescript/lib/lib.es2015.d.ts'
+	  Library referenced via 'es2015.symbol' from file 'node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts'
+	  Library referenced via 'es2015.symbol' from file 'node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts'
+	  Library referenced via 'es2015.symbol' from file 'node_modules/typescript/lib/lib.es2018.asynciterable.d.ts'
+	  Library referenced via 'es2015.symbol' from file 'node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts'
+	  Library referenced via 'es2015.symbol' from file 'node_modules/typescript/lib/lib.esnext.decorators.d.ts'
+	  Library referenced via 'es2015.symbol' from file 'node_modules/typescript/lib/lib.esnext.disposable.d.ts'
+	  Library referenced via 'es2015.symbol' from file 'node_modules/typescript/lib/lib.esnext.float16.d.ts'
+	node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts
+	  Library referenced via 'es2015.symbol.wellknown' from file 'node_modules/typescript/lib/lib.es2015.d.ts'
+	  Library referenced via 'es2015.symbol.wellknown' from file 'node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts'
+	  Library referenced via 'es2015.symbol.wellknown' from file 'node_modules/typescript/lib/lib.es2021.weakref.d.ts'
+	node_modules/typescript/lib/lib.es2016.array.include.d.ts
+	  Library referenced via 'es2016.array.include' from file 'node_modules/typescript/lib/lib.es2016.d.ts'
+	node_modules/typescript/lib/lib.es2016.intl.d.ts
+	  Library referenced via 'es2016.intl' from file 'node_modules/typescript/lib/lib.es2016.d.ts'
+	node_modules/typescript/lib/lib.es2017.arraybuffer.d.ts
+	  Library referenced via 'es2017.arraybuffer' from file 'node_modules/typescript/lib/lib.es2017.d.ts'
+	node_modules/typescript/lib/lib.es2017.date.d.ts
+	  Library referenced via 'es2017.date' from file 'node_modules/typescript/lib/lib.es2017.d.ts'
+	node_modules/typescript/lib/lib.es2017.object.d.ts
+	  Library referenced via 'es2017.object' from file 'node_modules/typescript/lib/lib.es2017.d.ts'
+	node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts
+	  Library referenced via 'es2017.sharedmemory' from file 'node_modules/typescript/lib/lib.es2017.d.ts'
+	node_modules/typescript/lib/lib.es2017.string.d.ts
+	  Library referenced via 'es2017.string' from file 'node_modules/typescript/lib/lib.es2017.d.ts'
+	node_modules/typescript/lib/lib.es2017.intl.d.ts
+	  Library referenced via 'es2017.intl' from file 'node_modules/typescript/lib/lib.es2017.d.ts'
+	node_modules/typescript/lib/lib.es2017.typedarrays.d.ts
+	  Library referenced via 'es2017.typedarrays' from file 'node_modules/typescript/lib/lib.es2017.d.ts'
+	node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts
+	  Library referenced via 'es2018.asyncgenerator' from file 'node_modules/typescript/lib/lib.es2018.d.ts'
+	node_modules/typescript/lib/lib.es2018.asynciterable.d.ts
+	  Library referenced via 'es2018.asynciterable' from file 'node_modules/typescript/lib/lib.es2018.d.ts'
+	  Library referenced via 'es2018.asynciterable' from file 'node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts'
+	  Library referenced via 'es2018.asynciterable' from file 'node_modules/typescript/lib/lib.esnext.disposable.d.ts'
+	node_modules/typescript/lib/lib.es2018.intl.d.ts
+	  Library referenced via 'es2018.intl' from file 'node_modules/typescript/lib/lib.es2018.d.ts'
+	  Library referenced via 'es2018.intl' from file 'node_modules/typescript/lib/lib.es2020.intl.d.ts'
+	node_modules/typescript/lib/lib.es2018.promise.d.ts
+	  Library referenced via 'es2018.promise' from file 'node_modules/typescript/lib/lib.es2018.d.ts'
+	node_modules/typescript/lib/lib.es2018.regexp.d.ts
+	  Library referenced via 'es2018.regexp' from file 'node_modules/typescript/lib/lib.es2018.d.ts'
+	node_modules/typescript/lib/lib.es2019.array.d.ts
+	  Library referenced via 'es2019.array' from file 'node_modules/typescript/lib/lib.es2019.d.ts'
+	node_modules/typescript/lib/lib.es2019.object.d.ts
+	  Library referenced via 'es2019.object' from file 'node_modules/typescript/lib/lib.es2019.d.ts'
+	node_modules/typescript/lib/lib.es2019.string.d.ts
+	  Library referenced via 'es2019.string' from file 'node_modules/typescript/lib/lib.es2019.d.ts'
+	node_modules/typescript/lib/lib.es2019.symbol.d.ts
+	  Library referenced via 'es2019.symbol' from file 'node_modules/typescript/lib/lib.es2019.d.ts'
+	node_modules/typescript/lib/lib.es2019.intl.d.ts
+	  Library referenced via 'es2019.intl' from file 'node_modules/typescript/lib/lib.es2019.d.ts'
+	node_modules/typescript/lib/lib.es2020.bigint.d.ts
+	  Library referenced via 'es2020.bigint' from file 'node_modules/typescript/lib/lib.es2020.d.ts'
+	  Library referenced via 'es2020.bigint' from file 'node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts'
+	  Library referenced via 'es2020.bigint' from file 'node_modules/typescript/lib/lib.es2024.sharedmemory.d.ts'
+	node_modules/typescript/lib/lib.es2020.date.d.ts
+	  Library referenced via 'es2020.date' from file 'node_modules/typescript/lib/lib.es2020.d.ts'
+	node_modules/typescript/lib/lib.es2020.promise.d.ts
+	  Library referenced via 'es2020.promise' from file 'node_modules/typescript/lib/lib.es2020.d.ts'
+	node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts
+	  Library referenced via 'es2020.sharedmemory' from file 'node_modules/typescript/lib/lib.es2020.d.ts'
+	node_modules/typescript/lib/lib.es2020.string.d.ts
+	  Library referenced via 'es2020.string' from file 'node_modules/typescript/lib/lib.es2020.d.ts'
+	node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts
+	  Library referenced via 'es2020.symbol.wellknown' from file 'node_modules/typescript/lib/lib.es2020.string.d.ts'
+	  Library referenced via 'es2020.symbol.wellknown' from file 'node_modules/typescript/lib/lib.es2020.d.ts'
+	node_modules/typescript/lib/lib.es2020.intl.d.ts
+	  Library referenced via 'es2020.intl' from file 'node_modules/typescript/lib/lib.es2020.bigint.d.ts'
+	  Library referenced via 'es2020.intl' from file 'node_modules/typescript/lib/lib.es2020.date.d.ts'
+	  Library referenced via 'es2020.intl' from file 'node_modules/typescript/lib/lib.es2020.number.d.ts'
+	  Library referenced via 'es2020.intl' from file 'node_modules/typescript/lib/lib.es2020.string.d.ts'
+	  Library referenced via 'es2020.intl' from file 'node_modules/typescript/lib/lib.es2020.d.ts'
+	node_modules/typescript/lib/lib.es2020.number.d.ts
+	  Library referenced via 'es2020.number' from file 'node_modules/typescript/lib/lib.es2020.d.ts'
+	node_modules/typescript/lib/lib.es2021.promise.d.ts
+	  Library referenced via 'es2021.promise' from file 'node_modules/typescript/lib/lib.es2021.d.ts'
+	  Library referenced via 'es2021.promise' from file 'node_modules/typescript/lib/lib.es2022.error.d.ts'
+	node_modules/typescript/lib/lib.es2021.string.d.ts
+	  Library referenced via 'es2021.string' from file 'node_modules/typescript/lib/lib.es2021.d.ts'
+	node_modules/typescript/lib/lib.es2021.weakref.d.ts
+	  Library referenced via 'es2021.weakref' from file 'node_modules/typescript/lib/lib.es2021.d.ts'
+	node_modules/typescript/lib/lib.es2021.intl.d.ts
+	  Library referenced via 'es2021.intl' from file 'node_modules/typescript/lib/lib.es2021.d.ts'
+	node_modules/typescript/lib/lib.es2022.array.d.ts
+	  Library referenced via 'es2022.array' from file 'node_modules/typescript/lib/lib.es2022.d.ts'
+	node_modules/typescript/lib/lib.es2022.error.d.ts
+	  Library referenced via 'es2022.error' from file 'node_modules/typescript/lib/lib.es2022.d.ts'
+	node_modules/typescript/lib/lib.es2022.intl.d.ts
+	  Library referenced via 'es2022.intl' from file 'node_modules/typescript/lib/lib.es2022.d.ts'
+	node_modules/typescript/lib/lib.es2022.object.d.ts
+	  Library referenced via 'es2022.object' from file 'node_modules/typescript/lib/lib.es2022.d.ts'
+	node_modules/typescript/lib/lib.es2022.string.d.ts
+	  Library referenced via 'es2022.string' from file 'node_modules/typescript/lib/lib.es2022.d.ts'
+	node_modules/typescript/lib/lib.es2022.regexp.d.ts
+	  Library referenced via 'es2022.regexp' from file 'node_modules/typescript/lib/lib.es2022.d.ts'
+	node_modules/typescript/lib/lib.es2023.array.d.ts
+	  Library referenced via 'es2023.array' from file 'node_modules/typescript/lib/lib.es2023.d.ts'
+	node_modules/typescript/lib/lib.es2023.collection.d.ts
+	  Library referenced via 'es2023.collection' from file 'node_modules/typescript/lib/lib.es2023.d.ts'
+	node_modules/typescript/lib/lib.es2023.intl.d.ts
+	  Library referenced via 'es2023.intl' from file 'node_modules/typescript/lib/lib.es2023.d.ts'
+	node_modules/typescript/lib/lib.es2024.arraybuffer.d.ts
+	  Library referenced via 'es2024.arraybuffer' from file 'node_modules/typescript/lib/lib.es2024.d.ts'
+	node_modules/typescript/lib/lib.es2024.collection.d.ts
+	  Library referenced via 'es2024.collection' from file 'node_modules/typescript/lib/lib.es2024.d.ts'
+	  Library referenced via 'es2024.collection' from file 'node_modules/typescript/lib/lib.esnext.collection.d.ts'
+	node_modules/typescript/lib/lib.es2024.object.d.ts
+	  Library referenced via 'es2024.object' from file 'node_modules/typescript/lib/lib.es2024.d.ts'
+	node_modules/typescript/lib/lib.es2024.promise.d.ts
+	  Library referenced via 'es2024.promise' from file 'node_modules/typescript/lib/lib.es2024.d.ts'
+	node_modules/typescript/lib/lib.es2024.regexp.d.ts
+	  Library referenced via 'es2024.regexp' from file 'node_modules/typescript/lib/lib.es2024.d.ts'
+	node_modules/typescript/lib/lib.es2024.sharedmemory.d.ts
+	  Library referenced via 'es2024.sharedmemory' from file 'node_modules/typescript/lib/lib.es2024.d.ts'
+	node_modules/typescript/lib/lib.es2024.string.d.ts
+	  Library referenced via 'es2024.string' from file 'node_modules/typescript/lib/lib.es2024.d.ts'
+	node_modules/typescript/lib/lib.esnext.array.d.ts
+	  Library referenced via 'esnext.array' from file 'node_modules/typescript/lib/lib.esnext.d.ts'
+	node_modules/typescript/lib/lib.esnext.collection.d.ts
+	  Library referenced via 'esnext.collection' from file 'node_modules/typescript/lib/lib.esnext.d.ts'
+	node_modules/typescript/lib/lib.esnext.intl.d.ts
+	  Library referenced via 'esnext.intl' from file 'node_modules/typescript/lib/lib.esnext.d.ts'
+	node_modules/typescript/lib/lib.esnext.disposable.d.ts
+	  Library referenced via 'esnext.disposable' from file 'node_modules/typescript/lib/lib.esnext.d.ts'
+	node_modules/typescript/lib/lib.esnext.promise.d.ts
+	  Library referenced via 'esnext.promise' from file 'node_modules/typescript/lib/lib.esnext.d.ts'
+	node_modules/typescript/lib/lib.esnext.decorators.d.ts
+	  Library referenced via 'esnext.decorators' from file 'node_modules/typescript/lib/lib.esnext.d.ts'
+	node_modules/typescript/lib/lib.esnext.iterator.d.ts
+	  Library referenced via 'esnext.iterator' from file 'node_modules/typescript/lib/lib.esnext.d.ts'
+	node_modules/typescript/lib/lib.esnext.float16.d.ts
+	  Library referenced via 'esnext.float16' from file 'node_modules/typescript/lib/lib.esnext.d.ts'
+	node_modules/typescript/lib/lib.decorators.d.ts
+	  Library referenced via 'decorators' from file 'node_modules/typescript/lib/lib.es5.d.ts'
+	  Library referenced via 'decorators' from file 'node_modules/typescript/lib/lib.esnext.decorators.d.ts'
+	node_modules/typescript/lib/lib.decorators.legacy.d.ts
+	  Library referenced via 'decorators.legacy' from file 'node_modules/typescript/lib/lib.es5.d.ts'
+	node_modules/magic-string/dist/magic-string.es.d.mts
+	  Imported via 'magic-string' from file 'node_modules/svelte/types/index.d.ts' with packageId 'magic-string/dist/magic-string.es.d.mts@0.30.17'
+	node_modules/@types/estree/index.d.ts
+	  Imported via 'estree' from file 'node_modules/svelte/types/index.d.ts' with packageId '@types/estree/index.d.ts@1.0.6'
+	  Imported via 'estree' from file 'node_modules/rollup/dist/rollup.d.ts' with packageId '@types/estree/index.d.ts@1.0.6'
+	  Entry point for implicit type library 'estree' with packageId '@types/estree/index.d.ts@1.0.6'
+	node_modules/locate-character/types/index.d.ts
+	  Imported via 'locate-character' from file 'node_modules/svelte/types/index.d.ts' with packageId 'locate-character/types/index.d.ts@3.0.0'
+	  Imported via 'locate-character' from file 'node_modules/svelte/types/index.d.ts' with packageId 'locate-character/types/index.d.ts@3.0.0'
+	node_modules/svelte/types/index.d.ts
+	  Type library referenced via 'svelte' from file 'node_modules/@sveltejs/kit/types/index.d.ts' with packageId 'svelte/types/index.d.ts@5.25.2'
+	  Imported via 'svelte/compiler' from file 'node_modules/@sveltejs/kit/types/index.d.ts' with packageId 'svelte/types/index.d.ts@5.25.2'
+	  Imported via 'svelte/compiler' from file 'node_modules/@sveltejs/vite-plugin-svelte/types/index.d.ts' with packageId 'svelte/types/index.d.ts@5.25.2'
+	  Imported via "svelte/compiler" from file 'node_modules/@sveltejs/vite-plugin-svelte/types/index.d.ts' with packageId 'svelte/types/index.d.ts@5.25.2'
+	  Imported via "svelte/store" from file 'node_modules/@sveltejs/kit/types/index.d.ts' with packageId 'svelte/types/index.d.ts@5.25.2'
+	  Imported via "svelte/store" from file 'node_modules/@sveltejs/kit/types/index.d.ts' with packageId 'svelte/types/index.d.ts@5.25.2'
+	  Imported via "svelte/store" from file 'node_modules/@sveltejs/kit/types/index.d.ts' with packageId 'svelte/types/index.d.ts@5.25.2'
+	  Imported via "svelte" from file '.svelte-kit/types/src/routes/$types.d.ts' with packageId 'svelte/types/index.d.ts@5.25.2'
+	node_modules/vite/types/hmrPayload.d.ts
+	  Imported via './hmrPayload' from file 'node_modules/vite/types/customEvent.d.ts' with packageId 'vite/types/hmrPayload.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via '../../types/hmrPayload.js' from file 'node_modules/vite/dist/node/module-runner.d.ts' with packageId 'vite/types/hmrPayload.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via '../../types/hmrPayload.js' from file 'node_modules/vite/dist/node/moduleRunnerTransport.d-CXw_Ws6P.d.ts' with packageId 'vite/types/hmrPayload.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via '../../types/hmrPayload.js' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'vite/types/hmrPayload.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via '../../types/hmrPayload.js' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'vite/types/hmrPayload.d.ts@6.2.2+yaml@2.7.0'
+	node_modules/vite/types/customEvent.d.ts
+	  Imported via './customEvent' from file 'node_modules/vite/types/hot.d.ts' with packageId 'vite/types/customEvent.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via '../../types/customEvent.js' from file 'node_modules/vite/dist/node/module-runner.d.ts' with packageId 'vite/types/customEvent.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via '../../types/customEvent.js' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'vite/types/customEvent.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via '../../types/customEvent.js' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'vite/types/customEvent.d.ts@6.2.2+yaml@2.7.0'
+	node_modules/vite/types/hot.d.ts
+	  Imported via './hot' from file 'node_modules/vite/types/importMeta.d.ts' with packageId 'vite/types/hot.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via '../../types/hot.js' from file 'node_modules/vite/dist/node/module-runner.d.ts' with packageId 'vite/types/hot.d.ts@6.2.2+yaml@2.7.0'
+	node_modules/vite/types/importGlob.d.ts
+	  Imported via './importGlob' from file 'node_modules/vite/types/importMeta.d.ts' with packageId 'vite/types/importGlob.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via '../../types/importGlob.js' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'vite/types/importGlob.d.ts@6.2.2+yaml@2.7.0'
+	node_modules/vite/types/importMeta.d.ts
+	  Referenced via './types/importMeta.d.ts' from file 'node_modules/vite/client.d.ts'
+	node_modules/vite/client.d.ts
+	  Type library referenced via 'vite/client' from file 'node_modules/@sveltejs/kit/types/index.d.ts' with packageId 'vite/client.d.ts@6.2.2+yaml@2.7.0'
+	node_modules/rollup/dist/rollup.d.ts
+	  Imported via 'rollup' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'rollup/dist/rollup.d.ts@4.36.0'
+	  Imported via 'rollup' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'rollup/dist/rollup.d.ts@4.36.0'
+	  Imported via './rollup' from file 'node_modules/rollup/dist/parseAst.d.ts' with packageId 'rollup/dist/rollup.d.ts@4.36.0'
+	node_modules/rollup/dist/parseAst.d.ts
+	  Imported via 'rollup/parseAst' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'rollup/dist/parseAst.d.ts@4.36.0'
+	node_modules/vite/dist/node/moduleRunnerTransport.d-CXw_Ws6P.d.ts
+	  Imported via './moduleRunnerTransport.d-CXw_Ws6P.js' from file 'node_modules/vite/dist/node/module-runner.d.ts' with packageId 'vite/dist/node/moduleRunnerTransport.d-CXw_Ws6P.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via './moduleRunnerTransport.d-CXw_Ws6P.js' from file 'node_modules/vite/dist/node/module-runner.d.ts' with packageId 'vite/dist/node/moduleRunnerTransport.d-CXw_Ws6P.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via './moduleRunnerTransport.d-CXw_Ws6P.js' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'vite/dist/node/moduleRunnerTransport.d-CXw_Ws6P.d.ts@6.2.2+yaml@2.7.0'
+	  File is ECMAScript module because 'node_modules/vite/package.json' has field "type" with value "module"
+	node_modules/vite/dist/node/module-runner.d.ts
+	  Imported via 'vite/module-runner' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'vite/dist/node/module-runner.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via 'vite/module-runner' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'vite/dist/node/module-runner.d.ts@6.2.2+yaml@2.7.0'
+	  File is ECMAScript module because 'node_modules/vite/package.json' has field "type" with value "module"
+	node_modules/esbuild/lib/main.d.ts
+	  Imported via 'esbuild' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'esbuild/lib/main.d.ts@0.25.1'
+	  Imported via 'esbuild' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'esbuild/lib/main.d.ts@0.25.1'
+	node_modules/source-map-js/source-map.d.ts
+	  Imported via 'source-map-js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'source-map-js/source-map.d.ts@1.2.1'
+	  Imported via 'source-map-js' from file 'node_modules/postcss/lib/previous-map.d.ts' with packageId 'source-map-js/source-map.d.ts@1.2.1'
+	node_modules/postcss/lib/previous-map.d.ts
+	  Imported via './previous-map.js' from file 'node_modules/postcss/lib/input.d.ts' with packageId 'postcss/lib/previous-map.d.ts@8.5.3'
+	node_modules/postcss/lib/input.d.ts
+	  Imported via './input.js' from file 'node_modules/postcss/lib/css-syntax-error.d.ts' with packageId 'postcss/lib/input.d.ts@8.5.3'
+	  Imported via './input.js' from file 'node_modules/postcss/lib/node.d.ts' with packageId 'postcss/lib/input.d.ts@8.5.3'
+	  Imported via './input.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/input.d.ts@8.5.3'
+	node_modules/postcss/lib/css-syntax-error.d.ts
+	  Imported via './css-syntax-error.js' from file 'node_modules/postcss/lib/node.d.ts' with packageId 'postcss/lib/css-syntax-error.d.ts@8.5.3'
+	  Imported via './css-syntax-error.js' from file 'node_modules/postcss/lib/warning.d.ts' with packageId 'postcss/lib/css-syntax-error.d.ts@8.5.3'
+	  Imported via './css-syntax-error.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/css-syntax-error.d.ts@8.5.3'
+	node_modules/postcss/lib/declaration.d.ts
+	  Imported via './declaration.js' from file 'node_modules/postcss/lib/node.d.ts' with packageId 'postcss/lib/declaration.d.ts@8.5.3'
+	  Imported via './declaration.js' from file 'node_modules/postcss/lib/container.d.ts' with packageId 'postcss/lib/declaration.d.ts@8.5.3'
+	  Imported via './declaration.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/declaration.d.ts@8.5.3'
+	node_modules/postcss/lib/root.d.ts
+	  Imported via './root.js' from file 'node_modules/postcss/lib/lazy-result.d.ts' with packageId 'postcss/lib/root.d.ts@8.5.3'
+	  Imported via './root.js' from file 'node_modules/postcss/lib/no-work-result.d.ts' with packageId 'postcss/lib/root.d.ts@8.5.3'
+	  Imported via './root.js' from file 'node_modules/postcss/lib/processor.d.ts' with packageId 'postcss/lib/root.d.ts@8.5.3'
+	  Imported via './root.js' from file 'node_modules/postcss/lib/document.d.ts' with packageId 'postcss/lib/root.d.ts@8.5.3'
+	  Imported via './root.js' from file 'node_modules/postcss/lib/node.d.ts' with packageId 'postcss/lib/root.d.ts@8.5.3'
+	  Imported via './root.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/root.d.ts@8.5.3'
+	node_modules/postcss/lib/warning.d.ts
+	  Imported via './warning.js' from file 'node_modules/postcss/lib/lazy-result.d.ts' with packageId 'postcss/lib/warning.d.ts@8.5.3'
+	  Imported via './warning.js' from file 'node_modules/postcss/lib/no-work-result.d.ts' with packageId 'postcss/lib/warning.d.ts@8.5.3'
+	  Imported via './warning.js' from file 'node_modules/postcss/lib/node.d.ts' with packageId 'postcss/lib/warning.d.ts@8.5.3'
+	  Imported via './warning.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/warning.d.ts@8.5.3'
+	node_modules/postcss/lib/lazy-result.d.ts
+	  Imported via './lazy-result.js' from file 'node_modules/postcss/lib/processor.d.ts' with packageId 'postcss/lib/lazy-result.d.ts@8.5.3'
+	  Imported via './lazy-result.js' from file 'node_modules/postcss/lib/no-work-result.d.ts' with packageId 'postcss/lib/lazy-result.d.ts@8.5.3'
+	  Imported via './lazy-result.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/lazy-result.d.ts@8.5.3'
+	node_modules/postcss/lib/no-work-result.d.ts
+	  Imported via './no-work-result.js' from file 'node_modules/postcss/lib/processor.d.ts' with packageId 'postcss/lib/no-work-result.d.ts@8.5.3'
+	node_modules/postcss/lib/processor.d.ts
+	  Imported via './processor.js' from file 'node_modules/postcss/lib/result.d.ts' with packageId 'postcss/lib/processor.d.ts@8.5.3'
+	  Imported via './processor.js' from file 'node_modules/postcss/lib/lazy-result.d.ts' with packageId 'postcss/lib/processor.d.ts@8.5.3'
+	  Imported via './processor.js' from file 'node_modules/postcss/lib/no-work-result.d.ts' with packageId 'postcss/lib/processor.d.ts@8.5.3'
+	  Imported via './processor.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/processor.d.ts@8.5.3'
+	node_modules/postcss/lib/result.d.ts
+	  Imported via './result.js' from file 'node_modules/postcss/lib/document.d.ts' with packageId 'postcss/lib/result.d.ts@8.5.3'
+	  Imported via './result.js' from file 'node_modules/postcss/lib/lazy-result.d.ts' with packageId 'postcss/lib/result.d.ts@8.5.3'
+	  Imported via './result.js' from file 'node_modules/postcss/lib/root.d.ts' with packageId 'postcss/lib/result.d.ts@8.5.3'
+	  Imported via './result.js' from file 'node_modules/postcss/lib/no-work-result.d.ts' with packageId 'postcss/lib/result.d.ts@8.5.3'
+	  Imported via './result.js' from file 'node_modules/postcss/lib/processor.d.ts' with packageId 'postcss/lib/result.d.ts@8.5.3'
+	  Imported via './result.js' from file 'node_modules/postcss/lib/node.d.ts' with packageId 'postcss/lib/result.d.ts@8.5.3'
+	  Imported via './result.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/result.d.ts@8.5.3'
+	node_modules/postcss/lib/document.d.ts
+	  Imported via './document.js' from file 'node_modules/postcss/lib/node.d.ts' with packageId 'postcss/lib/document.d.ts@8.5.3'
+	  Imported via './document.js' from file 'node_modules/postcss/lib/processor.d.ts' with packageId 'postcss/lib/document.d.ts@8.5.3'
+	  Imported via './document.js' from file 'node_modules/postcss/lib/lazy-result.d.ts' with packageId 'postcss/lib/document.d.ts@8.5.3'
+	  Imported via './document.js' from file 'node_modules/postcss/lib/root.d.ts' with packageId 'postcss/lib/document.d.ts@8.5.3'
+	  Imported via './document.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/document.d.ts@8.5.3'
+	node_modules/postcss/lib/rule.d.ts
+	  Imported via './rule.js' from file 'node_modules/postcss/lib/node.d.ts' with packageId 'postcss/lib/rule.d.ts@8.5.3'
+	  Imported via './rule.js' from file 'node_modules/postcss/lib/container.d.ts' with packageId 'postcss/lib/rule.d.ts@8.5.3'
+	  Imported via './rule.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/rule.d.ts@8.5.3'
+	node_modules/postcss/lib/node.d.ts
+	  Imported via './node.js' from file 'node_modules/postcss/lib/comment.d.ts' with packageId 'postcss/lib/node.d.ts@8.5.3'
+	  Imported via './node.js' from file 'node_modules/postcss/lib/declaration.d.ts' with packageId 'postcss/lib/node.d.ts@8.5.3'
+	  Imported via './node.js' from file 'node_modules/postcss/lib/warning.d.ts' with packageId 'postcss/lib/node.d.ts@8.5.3'
+	  Imported via './node.js' from file 'node_modules/postcss/lib/container.d.ts' with packageId 'postcss/lib/node.d.ts@8.5.3'
+	  Imported via './node.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/node.d.ts@8.5.3'
+	node_modules/postcss/lib/comment.d.ts
+	  Imported via './comment.js' from file 'node_modules/postcss/lib/container.d.ts' with packageId 'postcss/lib/comment.d.ts@8.5.3'
+	  Imported via './comment.js' from file 'node_modules/postcss/lib/node.d.ts' with packageId 'postcss/lib/comment.d.ts@8.5.3'
+	  Imported via './comment.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/comment.d.ts@8.5.3'
+	node_modules/postcss/lib/container.d.ts
+	  Imported via './container.js' from file 'node_modules/postcss/lib/at-rule.d.ts' with packageId 'postcss/lib/container.d.ts@8.5.3'
+	  Imported via './container.js' from file 'node_modules/postcss/lib/comment.d.ts' with packageId 'postcss/lib/container.d.ts@8.5.3'
+	  Imported via './container.js' from file 'node_modules/postcss/lib/node.d.ts' with packageId 'postcss/lib/container.d.ts@8.5.3'
+	  Imported via './container.js' from file 'node_modules/postcss/lib/declaration.d.ts' with packageId 'postcss/lib/container.d.ts@8.5.3'
+	  Imported via './container.js' from file 'node_modules/postcss/lib/document.d.ts' with packageId 'postcss/lib/container.d.ts@8.5.3'
+	  Imported via './container.js' from file 'node_modules/postcss/lib/root.d.ts' with packageId 'postcss/lib/container.d.ts@8.5.3'
+	  Imported via './container.js' from file 'node_modules/postcss/lib/rule.d.ts' with packageId 'postcss/lib/container.d.ts@8.5.3'
+	  Imported via './container.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/container.d.ts@8.5.3'
+	node_modules/postcss/lib/at-rule.d.ts
+	  Imported via './at-rule.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/at-rule.d.ts@8.5.3'
+	  Imported via './at-rule.js' from file 'node_modules/postcss/lib/container.d.ts' with packageId 'postcss/lib/at-rule.d.ts@8.5.3'
+	  Imported via './at-rule.js' from file 'node_modules/postcss/lib/node.d.ts' with packageId 'postcss/lib/at-rule.d.ts@8.5.3'
+	  Imported via './at-rule.js' from file 'node_modules/postcss/lib/node.d.ts' with packageId 'postcss/lib/at-rule.d.ts@8.5.3'
+	node_modules/postcss/lib/list.d.ts
+	  Imported via './list.js' from file 'node_modules/postcss/lib/postcss.d.ts' with packageId 'postcss/lib/list.d.ts@8.5.3'
+	node_modules/postcss/lib/postcss.d.ts
+	  Imported via './postcss.js' from file 'node_modules/postcss/lib/postcss.d.mts' with packageId 'postcss/lib/postcss.d.ts@8.5.3'
+	  Imported via './postcss.js' from file 'node_modules/postcss/lib/input.d.ts' with packageId 'postcss/lib/postcss.d.ts@8.5.3'
+	  Imported via './postcss.js' from file 'node_modules/postcss/lib/previous-map.d.ts' with packageId 'postcss/lib/postcss.d.ts@8.5.3'
+	  Imported via './postcss.js' from file 'node_modules/postcss/lib/document.d.ts' with packageId 'postcss/lib/postcss.d.ts@8.5.3'
+	  Imported via './postcss.js' from file 'node_modules/postcss/lib/result.d.ts' with packageId 'postcss/lib/postcss.d.ts@8.5.3'
+	  Imported via './postcss.js' from file 'node_modules/postcss/lib/lazy-result.d.ts' with packageId 'postcss/lib/postcss.d.ts@8.5.3'
+	  Imported via './postcss.js' from file 'node_modules/postcss/lib/root.d.ts' with packageId 'postcss/lib/postcss.d.ts@8.5.3'
+	  Imported via './postcss.js' from file 'node_modules/postcss/lib/no-work-result.d.ts' with packageId 'postcss/lib/postcss.d.ts@8.5.3'
+	  Imported via './postcss.js' from file 'node_modules/postcss/lib/processor.d.ts' with packageId 'postcss/lib/postcss.d.ts@8.5.3'
+	  Imported via './postcss.js' from file 'node_modules/postcss/lib/node.d.ts' with packageId 'postcss/lib/postcss.d.ts@8.5.3'
+	node_modules/postcss/lib/postcss.d.mts
+	  Imported via 'postcss' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'postcss/lib/postcss.d.mts@8.5.3'
+	node_modules/vite/types/internal/lightningcssOptions.d.ts
+	  Imported via '../../types/internal/lightningcssOptions.js' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'vite/types/internal/lightningcssOptions.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via '../../types/internal/lightningcssOptions.js' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'vite/types/internal/lightningcssOptions.d.ts@6.2.2+yaml@2.7.0'
+	node_modules/vite/types/internal/cssPreprocessorOptions.d.ts
+	  Imported via '../../types/internal/cssPreprocessorOptions.js' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'vite/types/internal/cssPreprocessorOptions.d.ts@6.2.2+yaml@2.7.0'
+	node_modules/vite/types/metadata.d.ts
+	  Imported via '../../types/metadata.js' from file 'node_modules/vite/dist/node/index.d.ts' with packageId 'vite/types/metadata.d.ts@6.2.2+yaml@2.7.0'
+	node_modules/vite/dist/node/index.d.ts
+	  Imported via 'vite' from file 'node_modules/@sveltejs/vite-plugin-svelte/types/index.d.ts' with packageId 'vite/dist/node/index.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via "vite" from file 'node_modules/@sveltejs/vite-plugin-svelte-inspector/types/index.d.ts' with packageId 'vite/dist/node/index.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via "vite" from file 'node_modules/@sveltejs/vite-plugin-svelte/types/index.d.ts' with packageId 'vite/dist/node/index.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via "vite" from file 'node_modules/@sveltejs/vite-plugin-svelte/types/index.d.ts' with packageId 'vite/dist/node/index.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via 'vite' from file 'node_modules/@sveltejs/kit/types/index.d.ts' with packageId 'vite/dist/node/index.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via "vite" from file 'node_modules/@sveltejs/kit/types/index.d.ts' with packageId 'vite/dist/node/index.d.ts@6.2.2+yaml@2.7.0'
+	  Imported via 'vite' from file 'vite.config.ts' with packageId 'vite/dist/node/index.d.ts@6.2.2+yaml@2.7.0'
+	  File is ECMAScript module because 'node_modules/vite/package.json' has field "type" with value "module"
+	node_modules/@sveltejs/vite-plugin-svelte-inspector/types/index.d.ts
+	  Imported via '@sveltejs/vite-plugin-svelte-inspector' from file 'node_modules/@sveltejs/vite-plugin-svelte/types/index.d.ts' with packageId '@sveltejs/vite-plugin-svelte-inspector/types/index.d.ts@4.0.1+@sveltejs/vite-plugin-svelte@5.0.3+svelte@5.25.2+vite@6.2.2'
+	node_modules/@sveltejs/vite-plugin-svelte/types/index.d.ts
+	  Imported via '@sveltejs/vite-plugin-svelte' from file 'node_modules/@sveltejs/kit/types/index.d.ts' with packageId '@sveltejs/vite-plugin-svelte/types/index.d.ts@5.0.3+svelte@5.25.2+vite@6.2.2'
+	node_modules/@types/cookie/index.d.ts
+	  Imported via 'cookie' from file 'node_modules/@sveltejs/kit/types/index.d.ts' with packageId '@types/cookie/index.d.ts@0.6.0'
+	  Imported via 'cookie' from file 'node_modules/@sveltejs/kit/types/index.d.ts' with packageId '@types/cookie/index.d.ts@0.6.0'
+	  Imported via 'cookie' from file 'node_modules/@sveltejs/kit/types/index.d.ts' with packageId '@types/cookie/index.d.ts@0.6.0'
+	  Imported via 'cookie' from file 'node_modules/@sveltejs/kit/types/index.d.ts' with packageId '@types/cookie/index.d.ts@0.6.0'
+	  Imported via 'cookie' from file 'node_modules/@sveltejs/kit/types/index.d.ts' with packageId '@types/cookie/index.d.ts@0.6.0'
+	  Entry point for implicit type library 'cookie' with packageId '@types/cookie/index.d.ts@0.6.0'
+	node_modules/@sveltejs/kit/types/index.d.ts
+	  Type library referenced via '@sveltejs/kit' from file '.svelte-kit/ambient.d.ts' with packageId '@sveltejs/kit/types/index.d.ts@2.20.2+@sveltejs/vite-plugin-svelte@5.0.3+svelte@5.25.2+vite@6.2.2'
+	  Imported via '@sveltejs/kit' from file '.svelte-kit/types/src/routes/$types.d.ts' with packageId '@sveltejs/kit/types/index.d.ts@2.20.2+@sveltejs/vite-plugin-svelte@5.0.3+svelte@5.25.2+vite@6.2.2'
+	  Imported via '@sveltejs/kit/vite' from file 'vite.config.ts' with packageId '@sveltejs/kit/types/index.d.ts@2.20.2+@sveltejs/vite-plugin-svelte@5.0.3+svelte@5.25.2+vite@6.2.2'
+	.svelte-kit/ambient.d.ts
+	  Matched by include pattern '.svelte-kit/ambient.d.ts' in 'tsconfig.json'
+	.svelte-kit/non-ambient.d.ts
+	  Matched by include pattern '.svelte-kit/non-ambient.d.ts' in 'tsconfig.json'
+	.svelte-kit/types/src/routes/$types.d.ts
+	  Matched by include pattern '.svelte-kit/./types/**/$types.d.ts' in 'tsconfig.json'
+	vite.config.ts
+	  Matched by include pattern '.svelte-kit/../vite.config.ts' in 'tsconfig.json'
+	src/app.d.ts
+	  Matched by include pattern '.svelte-kit/../src/**/*.ts' in 'tsconfig.json'
+	src/lib/index.ts
+	  Matched by include pattern '.svelte-kit/../src/**/*.ts' in 'tsconfig.json'
+	node_modules/@types/json-schema/index.d.ts
+	  Entry point for implicit type library 'json-schema' with packageId '@types/json-schema/index.d.ts@7.0.15'
+
+2025-03-26T18:37:25.825Z typescript-eslint:typescript-estree:tsserver:info -----------------------------------------------
+2025-03-26T18:37:25.828Z typescript-eslint:typescript-estree:tsserver:event {
+  eventName: 'projectLoadingFinish',
+  data: {
+    project: ConfiguredProject2 {
+      projectKind: 1,
+      projectService: [_ProjectService],
+      compilerOptions: [Object],
+      compileOnSaveEnabled: false,
+      watchOptions: undefined,
+      rootFilesMap: [Map],
+      plugins: [],
+      cachedUnresolvedImportsPerFile: [Map],
+      hasAddedorRemovedFiles: false,
+      hasAddedOrRemovedSymlinks: false,
+      lastReportedVersion: 0,
+      projectProgramVersion: 1,
+      projectStateVersion: 1,
+      initialLoadPending: false,
+      dirty: false,
+      typingFiles: [],
+      moduleSpecifierCache: [Object],
+      createHash: [Function: bound createSHA256Hash],
+      globalCacheResolutionModuleName: [Function: nonRelativeModuleNameForTypingCache],
+      updateFromProjectInProgress: false,
+      projectName: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json',
+      directoryStructureHost: [Object],
+      currentDirectory: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo',
+      getCanonicalFileName: [Function: identity],
+      jsDocParsingMode: 0,
+      cancellationToken: [ThrottledCancellationToken],
+      languageServiceEnabled: true,
+      trace: [Function (anonymous)],
+      realpath: [Function: bound realpath],
+      preferNonRecursiveWatch: true,
+      resolutionCache: [Object],
+      languageService: [Object],
+      canonicalConfigFilePath: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json',
+      openFileWatchTriggered: Map(0) {},
+      sendLoadingProjectFinish: false,
+      pendingUpdateLevel: 0,
+      pendingUpdateReason: undefined,
+      parsedCommandLine: [Object],
+      resolvedChildConfigs: undefined,
+      projectReferences: undefined,
+      potentialProjectReferences: undefined,
+      triggerFileForConfigFileDiag: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts',
+      projectOptions: [Object],
+      projectErrors: [],
+      lastCachedUnresolvedImportsList: [Array],
+      typeAcquisition: [Object],
+      hasInvalidatedResolutions: [Function: hasInvalidatedResolutions],
+      hasInvalidatedLibResolutions: [Function: hasInvalidatedLibResolutions],
+      compilerHost: undefined,
+      symlinks: [Object],
+      program: [Object],
+      missingFilesMap: Map(0) {},
+      externalFiles: [],
+      autoImportProviderHost: undefined
+    }
+  }
+}
+2025-03-26T18:37:25.831Z typescript-eslint:typescript-estree:tsserver:event {
+  eventName: 'projectInfo',
+  data: {
+    projectId: '273af857ec14c4f324575cf90569fb8a6528faab36c1a0b36005b754b5a50ead',
+    fileStats: {
+      js: 0,
+      jsSize: 0,
+      jsx: 0,
+      jsxSize: 0,
+      ts: 2,
+      tsSize: 219,
+      tsx: 0,
+      tsxSize: 0,
+      dts: 128,
+      dtsSize: 2606219,
+      deferred: 0,
+      deferredSize: 0
+    },
+    compilerOptions: {
+      paths: '',
+      rootDirs: [Array],
+      verbatimModuleSyntax: true,
+      isolatedModules: true,
+      lib: [Array],
+      moduleResolution: 'bundler',
+      module: 'esnext',
+      noEmit: true,
+      target: 'esnext',
+      allowJs: true,
+      checkJs: true,
+      esModuleInterop: true,
+      forceConsistentCasingInFileNames: true,
+      resolveJsonModule: true,
+      skipLibCheck: true,
+      sourceMap: true,
+      strict: true
+    },
+    typeAcquisition: { enable: false, include: false, exclude: false },
+    extends: true,
+    files: false,
+    include: true,
+    exclude: true,
+    compileOnSave: false,
+    configFileName: 'tsconfig.json',
+    projectType: 'configured',
+    languageServiceEnabled: true,
+    version: '5.8.2'
+  }
+}
+2025-03-26T18:37:25.833Z typescript-eslint:typescript-estree:tsserver:event {
+  eventName: 'configFileDiag',
+  data: {
+    configFileName: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json',
+    diagnostics: [],
+    triggerFile: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts'
+  }
+}
+2025-03-26T18:37:25.835Z typescript-eslint:typescript-estree:tsserver:info Project '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json' (Configured)
+2025-03-26T18:37:25.835Z typescript-eslint:typescript-estree:tsserver:info 	Files (130)
+
+2025-03-26T18:37:25.835Z typescript-eslint:typescript-estree:tsserver:info -----------------------------------------------
+2025-03-26T18:37:25.835Z typescript-eslint:typescript-estree:tsserver:info Open files: 
+2025-03-26T18:37:25.835Z typescript-eslint:typescript-estree:tsserver:info 	FileName: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts ProjectRootPath: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo
+2025-03-26T18:37:25.835Z typescript-eslint:typescript-estree:tsserver:info 		Projects: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json
+2025-03-26T18:37:25.835Z typescript-eslint:typescript-estree:useProgramFromProjectService Result from attempting to open client file: { configFileName: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json', configFileErrors: [] }
+2025-03-26T18:37:25.835Z typescript-eslint:typescript-estree:useProgramFromProjectService Default project allowed path: false, based on config file: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json
+2025-03-26T18:37:25.835Z typescript-eslint:typescript-estree:useProgramFromProjectService Opened project service file: { configFileName: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json', configFileErrors: [] }
+2025-03-26T18:37:25.836Z typescript-eslint:typescript-estree:useProgramFromProjectService Retrieving script info and then program for: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts
+2025-03-26T18:37:25.836Z typescript-eslint:typescript-estree:useProgramFromProjectService Found project service program for: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts
+2025-03-26T18:37:25.836Z typescript-eslint:typescript-estree:create-program:createProjectProgram Creating project program for: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts
+2025-03-26T18:37:25.845Z typescript-eslint:parser:parser Resolved libs from program: [ 'esnext', 'dom', 'dom.iterable' ]
+2025-03-26T18:37:25.882Z typescript-eslint:typescript-estree:useProgramFromProjectService Opening project service file for: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/lib/index.ts at absolute path /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/lib/index.ts
+2025-03-26T18:37:25.882Z typescript-eslint:typescript-estree:useProgramFromProjectService Opening project service client file at path: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/lib/index.ts
+2025-03-26T18:37:25.882Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Close:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/lib/index.ts 500 undefined WatchType: Closed Script info
+2025-03-26T18:37:25.882Z typescript-eslint:typescript-estree:tsserver:info getConfigFileNameForFile:: File: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/lib/index.ts ProjectRootPath: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo:: Result: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json
+2025-03-26T18:37:25.883Z typescript-eslint:typescript-estree:tsserver:info Project '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json' (Configured)
+2025-03-26T18:37:25.883Z typescript-eslint:typescript-estree:tsserver:info 	Files (130)
+
+2025-03-26T18:37:25.883Z typescript-eslint:typescript-estree:tsserver:info -----------------------------------------------
+2025-03-26T18:37:25.883Z typescript-eslint:typescript-estree:tsserver:info Open files: 
+2025-03-26T18:37:25.883Z typescript-eslint:typescript-estree:tsserver:info 	FileName: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts ProjectRootPath: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo
+2025-03-26T18:37:25.883Z typescript-eslint:typescript-estree:tsserver:info 		Projects: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json
+2025-03-26T18:37:25.883Z typescript-eslint:typescript-estree:tsserver:info 	FileName: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/lib/index.ts ProjectRootPath: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo
+2025-03-26T18:37:25.883Z typescript-eslint:typescript-estree:tsserver:info 		Projects: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json
+2025-03-26T18:37:25.883Z typescript-eslint:typescript-estree:useProgramFromProjectService Result from attempting to open client file: { configFileName: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json', configFileErrors: [] }
+2025-03-26T18:37:25.883Z typescript-eslint:typescript-estree:useProgramFromProjectService Default project allowed path: false, based on config file: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json
+2025-03-26T18:37:25.883Z typescript-eslint:typescript-estree:useProgramFromProjectService Opened project service file: { configFileName: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json', configFileErrors: [] }
+2025-03-26T18:37:25.883Z typescript-eslint:typescript-estree:useProgramFromProjectService Retrieving script info and then program for: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/lib/index.ts
+2025-03-26T18:37:25.883Z typescript-eslint:typescript-estree:useProgramFromProjectService Found project service program for: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/lib/index.ts
+2025-03-26T18:37:25.883Z typescript-eslint:typescript-estree:create-program:createProjectProgram Creating project program for: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/lib/index.ts
+2025-03-26T18:37:25.884Z typescript-eslint:parser:parser Resolved libs from program: [ 'esnext', 'dom', 'dom.iterable' ]
+2025-03-26T18:37:25.944Z typescript-eslint:typescript-estree:create-program:createSourceFile Getting AST without type information in TS mode for: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/routes/+page.svelte
+2025-03-26T18:37:26.664Z typescript-eslint:typescript-estree:parseSettings:createParseSettings parserOptions.programs was provided, so parserOptions.project will be ignored.
+2025-03-26T18:37:26.664Z typescript-eslint:typescript-estree:create-program:useProvidedPrograms Retrieving ast for /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/routes/+page.svelte from provided program instance(s)
+2025-03-26T18:37:26.670Z typescript-eslint:parser:parser Resolved libs from program: [ 'esnext', 'dom', 'dom.iterable' ]
+2025-03-26T18:37:26.770Z typescript-eslint:type-utils:predicates Found an "error" any type
+2025-03-26T18:37:26.795Z typescript-eslint:typescript-estree:useProgramFromProjectService Opening project service file for: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/vite.config.ts at absolute path /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/vite.config.ts
+2025-03-26T18:37:26.795Z typescript-eslint:typescript-estree:useProgramFromProjectService Opening project service client file at path: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/vite.config.ts
+2025-03-26T18:37:26.795Z typescript-eslint:typescript-estree:tsserver:info FileWatcher:: Close:: WatchInfo: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/vite.config.ts 500 undefined WatchType: Closed Script info
+2025-03-26T18:37:26.795Z typescript-eslint:typescript-estree:tsserver:info getConfigFileNameForFile:: File: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/vite.config.ts ProjectRootPath: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo:: Result: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:tsserver:info Project '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json' (Configured)
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:tsserver:info 	Files (130)
+
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:tsserver:info -----------------------------------------------
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:tsserver:info Open files: 
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:tsserver:info 	FileName: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/app.d.ts ProjectRootPath: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:tsserver:info 		Projects: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:tsserver:info 	FileName: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/lib/index.ts ProjectRootPath: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:tsserver:info 		Projects: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:tsserver:info 	FileName: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/vite.config.ts ProjectRootPath: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:tsserver:info 		Projects: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:useProgramFromProjectService Result from attempting to open client file: { configFileName: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json', configFileErrors: [] }
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:useProgramFromProjectService Default project allowed path: false, based on config file: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:useProgramFromProjectService Opened project service file: { configFileName: '/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/tsconfig.json', configFileErrors: [] }
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:useProgramFromProjectService Retrieving script info and then program for: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/vite.config.ts
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:useProgramFromProjectService Found project service program for: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/vite.config.ts
+2025-03-26T18:37:26.796Z typescript-eslint:typescript-estree:create-program:createProjectProgram Creating project program for: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/vite.config.ts
+2025-03-26T18:37:26.798Z typescript-eslint:parser:parser Resolved libs from program: [ 'esnext', 'dom', 'dom.iterable' ]
+2025-03-26T18:37:26.833Z typescript-eslint:typescript-estree:create-program:createSourceFile Getting AST without type information in TS mode for: /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/components/Foo.svelte
+2025-03-26T18:37:26.880Z typescript-eslint:typescript-estree:parseSettings:createParseSettings parserOptions.programs was provided, so parserOptions.project will be ignored.
+2025-03-26T18:37:26.881Z typescript-eslint:typescript-estree:create-program:useProvidedPrograms Retrieving ast for /home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/components/Foo.svelte from provided program instance(s)
+2025-03-26T18:37:26.884Z typescript-eslint:parser:parser Resolved libs from program: [ 'esnext', 'dom', 'dom.iterable' ]
+
+/home/jdesrosiers/Projects/jdesrosiers/svelte-eslint-component-function-bug-demo/src/routes/+page.svelte
+  7:5  error  Unsafe call of a(n) `error` type typed value  @typescript-eslint/no-unsafe-call
+
+✖ 1 problem (1 error, 0 warnings)
+
